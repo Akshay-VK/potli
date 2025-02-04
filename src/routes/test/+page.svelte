@@ -1,0 +1,21 @@
+<script>
+	import Base from "../Base.svelte";
+
+</script>
+
+{#snippet content()}
+   <div class="text-lg font-semibold">Testtt.</div>
+<p class="leading-7 [&:not(:first-child)]:mt-6">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus, dolor eu mattis ultrices, sapien erat auctor enim, porta euismod massa sem vel risus. Etiam placerat pharetra facilisis. Etiam auctor nisl eu orci sollicitudin, nec laoreet elit volutpat. Integer euismod porttitor quam, et hendrerit ex. Nullam malesuada risus at lacus fermentum aliquet. In quis feugiat lectus. Sed suscipit metus eget placerat condimentum. In sed faucibus sem. Cras facilisis enim laoreet leo convallis faucibus. Pellentesque egestas aliquam turpis, et hendrerit eros fringilla quis. Nunc sollicitudin, lectus ut lobortis pellentesque, massa ex rutrum elit, quis hendrerit purus nibh in lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam nulla turpis, dapibus id justo a, pulvinar bibendum neque. Maecenas accumsan metus lacus, sit amet euismod est lobortis id. Aliquam erat volutpat.
+
+Nulla lobortis purus dui, sed gravida elit commodo eu. Proin vehicula nisl nisl, sed consequat enim interdum ac. Integer auctor arcu iaculis, pulvinar odio molestie, mattis ligula. Ut semper dui eu massa rutrum, id pharetra diam consectetur. Proin at condimentum risus, nec consectetur eros. Suspendisse pretium porta fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed id gravida nisl, ut viverra turpis. Pellentesque sapien mauris, tristique posuere enim nec, fringilla efficitur nunc. Duis sed suscipit nisi, nec sodales sem. Vivamus auctor, ligula sit amet mollis pretium, turpis dolor sagittis nunc, a elementum nisl mi in ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec hendrerit, odio nec consequat consectetur, nibh velit sagittis velit, nec pretium ex dui eu libero. Duis consequat viverra lorem non molestie. Nam euismod id ante non vulputate. Morbi interdum nibh sem, ut sodales nisi maximus id.
+
+Pellentesque eu sapien iaculis metus ultricies accumsan. Vestibulum laoreet lacus id metus tristique blandit. Maecenas egestas elementum lectus vitae egestas. Cras leo odio, vehicula quis fermentum sollicitudin, fringilla vel orci. Curabitur tortor nisi, suscipit sed finibus ut, rhoncus sed mauris. Fusce at velit vitae massa feugiat scelerisque vitae in orci. Sed in tortor viverra, commodo est a, tincidunt diam. Sed tempor venenatis nisl in fringilla. Integer pellentesque, dolor in tempor sagittis, velit mi condimentum elit, non laoreet est dui tincidunt libero. Nam nisl risus, posuere a sapien nec, malesuada maximus erat. Duis sed scelerisque justo, vitae venenatis ante. Nulla ac augue nisi.
+
+Aenean quis leo ac lectus lacinia sodales. Suspendisse sit amet est sit amet orci mattis dignissim. Sed euismod sapien ultrices lacus porttitor pharetra. Donec sed elit non lorem placerat imperdiet. Suspendisse ante velit, condimentum vitae ipsum sed, varius viverra nulla. Aenean diam ipsum, euismod nec lacinia non, ornare vitae dolor. Praesent sed fringilla enim, vel porta quam. Sed fringilla risus vel orci blandit, in laoreet neque egestas. Sed maximus eu nulla sit amet ullamcorper. Phasellus suscipit, neque at volutpat maximus, quam eros dictum enim, vitae convallis risus justo eget nulla. Proin mauris lectus, elementum ac nulla in, tincidunt scelerisque justo.
+
+Cras feugiat tempor ipsum, ut viverra nibh suscipit vel. Vivamus fermentum leo ac porttitor congue. Donec ex libero, commodo eu mattis non, bibendum vel tortor. Ut lobortis mattis urna et efficitur. Nullam auctor vel nisi id sodales. Vestibulum lacinia faucibus tristique. Vestibulum quis ultrices dolor, non posuere enim. Mauris eu ante finibus, fringilla diam sed, pharetra lectus. Sed augue purus, consectetur sed purus vitae, fringilla facilisis dui. Duis tempor dui facilisis erat mattis, nec malesuada augue condimentum. Suspendisse dignissim hendrerit dignissim. Aliquam hendrerit tempus libero, eget sollicitudin libero. Donec nec arcu a libero luctus finibus tincidunt eu mauris. Aliquam erat volutpat. Sed elit purus, pharetra ac nulla interdum, tincidunt vehicula est. Quisque placerat nec lectus at imperdiet.
+</p>
+{/snippet}
+
+<Base {content}/>
