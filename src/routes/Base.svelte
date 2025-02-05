@@ -6,7 +6,7 @@
     let {content} = $props();
 </script>
 
-<div class="bg-slate-50 flex flex-col dark:bg-slate-950 w-dvw h-screen divide-y dark:text-slate-50 text-slate-950 overflow-hidden">
+<div class="font-[Montserrat] bg-slate-50 flex flex-col dark:bg-slate-950 w-dvw h-screen divide-y dark:text-slate-50 text-slate-950 overflow-hidden">
    <Navbar/> 
     <div class="flex flex-row flex-auto">
         <div class="sm:block hidden flex-none w-64 h-3/4"><Sidebar/></div>

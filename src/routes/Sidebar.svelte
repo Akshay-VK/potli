@@ -8,5 +8,6 @@ import SiteLink from "./SiteLink.svelte";
 	<div class="flex flex-col justify-items-start gap-1 h-screen mt-4 mb-4 overflow-hidden">
 		<SiteLink text="Home" to="/"/>
 		<SiteLink text="Test" to="/test"/>
+		<SiteLink text="Text to QR Code" to="qrcode"/>
 	</div>
 </ScrollArea>
