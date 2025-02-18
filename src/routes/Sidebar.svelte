@@ -9,5 +9,6 @@ import SiteLink from "./SiteLink.svelte";
 		<SiteLink text="Home" to="/"/>
 		<!-- <SiteLink text="Test" to="/test"/> -->
 		<SiteLink text="Text to QR Code" to="qrcode"/>
+		<SiteLink text="Timezone converter" to="timezone"/>
 	</div>
 </ScrollArea>
