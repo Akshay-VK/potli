@@ -33,7 +33,7 @@
 
 ### **📅 Time & Productivity (Boost Daily Workflow)**  
 [  ] ⏳ **Pomodoro Timer** – Helps with focus and work sessions  
-[  ] 🌍 **World Clock & Time Zone Converter** – Quick global time check  
+[☑️] 🌍 **World Clock & Time Zone Converter** – Quick global time check  
 [  ] 📆 **Countdown Timer** – For deadlines & important dates  
 [  ] 🎂 **Age Calculator** – Simple & useful for fun  
 
