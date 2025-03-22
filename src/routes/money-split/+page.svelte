@@ -116,6 +116,10 @@
         split=true;
     }
 
+    function duplicates_present(): boolean{
+        return users.indexOf(newname)>-1;
+    }
+
 </script>
 
 {#snippet content()}
@@ -128,7 +132,7 @@
 
     <form class="flex flex-col sm:flex-row w-full items-center space-x-0 space-y-3 sm:space-y-0 sm:space-x-2">
         <Input class="sm:flex-auto" bind:value={newname} placeholder="Add person..." />
-        <Button class="sm:flex-none w-full sm:w-fit" on:click={()=>{add_user();newname==""}} disabled={newname.length==0}>Add</Button>
+        <Button class="sm:flex-none w-full sm:w-fit" on:click={()=>{add_user();newname==""}} disabled={newname.length==0 || duplicates_present()}>Add</Button>
     </form>
     <div class="py-4">
         <ScrollArea class="h-[200px] w-full rounded-md border p-4">
@@ -212,11 +216,11 @@
             {#each final_split as s,i}
                 {#if s.amount>0}
                     <div class="flex justify-between py-2 place-items-center">
-                        <p class="font-semibold">{s.a} <i>must pay</i> {s.amount} <i>to</i> {s.b}</p>
+                        <p class="font-semibold">{s.a} <i>must pay</i> {s.amount.toFixed(2)} <i>to</i> {s.b}</p>
                     </div>
                 {:else if s.amount<0}
                     <div class="flex justify-between py-2 place-items-center">
-                        <p class="font-semibold">{s.b} <i>must pay</i> {-s.amount} <i>to</i> {s.a}</p>
+                        <p class="font-semibold">{s.b} <i>must pay</i> {-s.amount.toFixed(2)} <i>to</i> {s.a}</p>
                     </div>
                 {/if}
                 {#if i<users.length-1}
