@@ -118,32 +118,34 @@
 			</Select.Root>
 		</div>
 
-		<div class="py-2">
+		<!-- <div class="py-2">
 			<p class="text-sm font-semibold text-muted-foreground">Adjust offset</p>
 		</div>
 		<div class="w-64 px-4 py-4">
-			<Slider
-				value={[offset]}
-				max={1440}
-				step={1}
-				onValueChange={(v) => {
-					offset = v[0];
-				}}
-			/>
-		</div>
+		
+		</div> -->
 		<!-- <input type="range" min="0" max="1440" bind:value={offset} /> -->
 		<div class="py-2 text-lg font-semibold">
-			<p class="text-sm text-muted-foreground">Time:</p>
-			<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">
-				{('' + Math.floor(offset / 60)).padStart(2, '0')}:{('' + (offset % 60)).padStart(2, '0')}:00
-			</h3>
+			<p class="text-sm text-muted-foreground py-2">Time: <code class="scroll-m-20 text-2xl font-semibold tracking-tight px-4">{('' + Math.floor(offset / 60)).padStart(2, '0')}:{('' + (offset % 60)).padStart(2, '0')}</code></p>
+			
+			<div class="w-64 py-4 px-4">
+				<Slider
+					value={[offset]}
+					max={1440}
+					step={1}
+					onValueChange={(v) => {
+						offset = v[0];
+					}}
+				/>
+				<p class="text-muted-foreground text-xs py-4">Drag to adjust time.</p>
+			</div>
 		</div>
 		<div class="py-4">
 			<div class="text-lg font-semibold">
 				<p class="text-sm text-muted-foreground">Converted time:</p>
-				<h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">
+				<code class="scroll-m-20 text-2xl font-semibold tracking-tight">
 					{updateTimeZone(adjustedDate, selectedTimeZone)}
-				</h3>
+				</code>
 			</div>
 		</div>
 	</div>
