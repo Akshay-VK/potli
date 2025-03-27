@@ -12,4 +12,4 @@
     </p>
 {/snippet}
 
-<Base {content}/>
+<Base {content} title='Home'/>

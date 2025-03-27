@@ -18,4 +18,4 @@ Cras feugiat tempor ipsum, ut viverra nibh suscipit vel. Vivamus fermentum leo a
 </p>
 {/snippet}
 
-<Base {content}/>
+<Base {content} title='Test'/>

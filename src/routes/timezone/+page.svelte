@@ -61,7 +61,7 @@
 
 {#snippet content()}
 	<div class="">
-		<h1 class="scroll-m-20 pb-8 text-3xl font-extrabold tracking-tight lg:text-4xl">
+		<h1 class="scroll-m-20 pb-4 text-3xl font-extrabold tracking-tight lg:text-4xl">
 			Time zone converter
 		</h1>
 
@@ -151,4 +151,4 @@
 	</div>
 {/snippet}
 
-<Base {content} />
+<Base {content} title='Time zone converter'/>

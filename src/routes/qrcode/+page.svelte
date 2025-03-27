@@ -48,4 +48,4 @@
 
 {/snippet}
 
-<Base {content}/>
+<Base {content} title='Text to QR Code'/>

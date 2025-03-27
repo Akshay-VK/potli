@@ -123,12 +123,12 @@
 </script>
 
 {#snippet content()}
-<h1 class="scroll-m-20 pb-8 text-3xl font-extrabold tracking-tight lg:text-4xl">
+<h1 class="scroll-m-20 pb-4 text-3xl font-extrabold tracking-tight lg:text-4xl">
     Money Splitter
 </h1>
 <!-- ADD/REMOVE USERS -->
 <div class="py-2 w-4/5">
-    <h4 class="scroll-m-20 text-xl font-semibold tracking-tight py-4">People</h4>
+    <h4 class="scroll-m-20 text-xl font-semibold tracking-tight pb-4">People</h4>
 
     <form class="flex flex-col sm:flex-row w-full items-center space-x-0 space-y-3 sm:space-y-0 sm:space-x-2">
         <Input class="sm:flex-auto" bind:value={newname} placeholder="Add person..." />
@@ -234,4 +234,4 @@
 
 {/snippet}
 
-<Base {content}/>
+<Base {content} title='Money Splitter'/>

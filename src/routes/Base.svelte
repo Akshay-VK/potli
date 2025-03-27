@@ -3,8 +3,12 @@
 	import Navbar from "./Navbar.svelte";
     import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 
-    let {content} = $props();
+    let {content,title} = $props();
 </script>
+
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
 
 <div class="font-[Montserrat] bg-slate-50 flex flex-col dark:bg-slate-950 w-dvw h-screen divide-y dark:text-slate-50 text-slate-950 overflow-hidden">
    <Navbar/> 
